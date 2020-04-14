@@ -15,9 +15,6 @@ class TestView (mvpActivity: MvpActivity, viewCreator: AndroidMvpView.ViewCreato
 
     }
 
-    override fun showError(msgError: String) {
-    }
-
     override fun showLoading() {
     }
 

@@ -1,16 +1,15 @@
-package datn.datn_expansemanagement.screen.test.presentation
+package datn.datn_expansemanagement.screen.overview.presentation
 
-import com.github.vivchar.rendererrecyclerviewadapter.ViewModel
 import datn.datn_expansemanagement.core.base.presentation.mvp.base.MvpPresenter
 import datn.datn_expansemanagement.core.base.presentation.mvp.base.MvpView
 
-interface TestContract {
+interface OverviewContract {
     interface View: MvpView {
         fun showLoading()
         fun hideLoading()
     }
 
     abstract class Presenter : MvpPresenter<View>(){
-
+        abstract fun getData()
     }
 }
